@@ -1,0 +1,523 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #191c32;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.brand {
+  margin-top: -7px;
+}
+
+.brand span {
+  color: aqua;
+}
+
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.menu li:hover a {
+  background-color: aqua;
+  border-radius: 50px;
+  color: #191c32;
+}
+
+.menu li a:hover {
+  color: #000;
+}
+
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.info-content span p {
+  color: #fff;
+}
+
+
+.main img {
+  border-radius: 60%;
+  width: 500px;
+  height: 450px;
+  z-index: 1;
+}
+
+/* Sección Sobre Mí */
+.about {
+  background-color: #fff;
+  color: #191c32;
+  padding: 20px 20px;
+}
+
+.about .contenido-seccion {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.about h2 {
+  font-size: 48px;
+  font-family: 'Montserrat';
+  text-align: center;
+  padding: 20px 0;
+}
+
+.about .contenido-seccion p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.about .contenido-seccion p span {
+  color: aqua;
+  font-weight: bold
+}
+
+/* Estructura de columnas */
+.about .fila {
+  display: flex;
+}
+
+.about .fila .col {
+  width: 50%;
+}
+
+/* Datos personales */
+.about .fila .col h3 {
+  font-size: 28px;
+  font-family: 'Montserrat';
+  margin-bottom: 25px;
+}
+
+.about .fila .col ul {
+  list-style: none;
+}
+
+.about .fila .col ul li {
+  margin: 12px 0;
+}
+
+.about .fila .col ul li strong {
+  display: inline-block;
+  color: #191c32;
+  width: 130px;
+}
+
+.about .fila .col ul li span {
+  background-color: aqua;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Intereses */
+.about .fila .col .contenedor-intereses {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about .fila .col .contenedor-intereses .interes {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+.about .fila .col .contenedor-intereses .interes:hover {
+  background-color: #1CB698;
+}
+
+.about .fila .col .contenedor-intereses .interes i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* Botón de descarga */
+.about button {
+  cursor: pointer;
+  background-color: aqua;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #000;
+  position: relative;
+  z-index: 10;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+  -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+}
+
+.about button:hover {
+  background-color: #66e7c8b0;
+  box-shadow: none;
+}
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: aqua;
+  margin-top: 5px;
+  margin-bottom: 2em;
+}
+
+.about p {
+  margin-bottom: 1em;
+}
+
+/* Seccion proyectos */
+.download-cv {
+  padding: 10px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+  -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+}
+
+.download-cv:hover {
+  background-color: azure;
+  box-shadow: none;
+}
+
+.portfolio,
+.contact-section {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #191c32;
+  color: #fff;
+  padding: 3em 0;
+}
+
+.portfolio-heading,
+.contact-heading {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-heading h2,
+.contact-heading h2 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.portfolio .container {
+  width: 80vw;
+  min-height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card {
+  width: 300px;
+  background-color: #2b3058;
+  margin: 1em;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 100%;
+  height: 150px;
+  background-image: url(https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543491/samples/2-original_agisst.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.card__title {
+  padding: 20px;
+  text-align: center;
+}
+
+.card__proyect-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 15px;
+}
+
+.card__proyect-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card__proyect-links i {
+  font-size: 1.5em;
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.project-details-button a {
+  text-decoration: none;
+  color: #191c32;
+}
+
+.contact-section {
+  padding: 3em;
+}
+
+.container-contact {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.contact-section img {
+  max-width: 750px;
+  height: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  max-width: 400px;
+  margin-top: 2em;
+}
+
+.form-group textarea,
+.form-group .input {
+  padding: 1em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 100%;
+}
+
+.form-group .btn-submit {
+  padding: 10px 20px;
+  margin-top: 1em;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 2em;
+  background-color: aqua;
+  text-align: center;
+}
+
+.footer-content h2 {
+  font-size: 3em;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+}
+
+.sotial-networks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.sotial-networks i {
+  font-size: 1.5em;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+
+  .portfolio .container,
+  .container-contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card {
+    width: 85%;
+  }
+
+  .contact-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .form-group {
+    width: 90%;
+  }
+}
+
+/*Sección Contactos*/
+
+.contact-section {
+  padding: 3em;
+}
+
+.container-contact {
+  margin: 0 auto;
+  margin-top: 5em;
+  /* Ajuste para mejorar alineación */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* Permite mejor ajuste en pantallas pequeñas */
+  gap: 2em;
+  /* Espacio entre elementos */
+}
+
+.contact-section img {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  object-fit: cover;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  /* Ajuste para mejor adaptación */
+  margin-top: 2em;
+}
+
+.form-group textarea,
+.form-group .input {
+  padding: 1em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.form-group .input {
+  margin-bottom: 1em;
+  border-bottom: 2px solid #fff;
+}
+
+.form-group .btn-submit {
+  padding: 10px 20px;
+  margin: 1em 0;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color: aqua;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-group .btn-submit:hover {
+  background-color: azure;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  padding: 2em;
+  background-color: aqua;
+  text-align: center;
+}
+
+.footer-content h2 {
+  font-size: 3em;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+}
+
+.sotial-networks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.sotial-networks a {
+  color: black;
+  transition: color 0.3s;
+}
+
+.sotial-networks a:hover {
+  color: darkblue;
+}
+
+.sotial-networks i {
+  font-size: 1.5em;
+}
